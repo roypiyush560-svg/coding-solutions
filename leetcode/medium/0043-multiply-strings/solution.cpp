@@ -1,0 +1,1 @@
+class Solution { public: string multiply(string a,string b){if(a=="0"||b=="0")return "0";int m=a.size(),n=b.size();vector<int> v(m+n);for(int i=m-1;i>=0;i--)for(int j=n-1;j>=0;j--){int x=(a[i]-'0')*(b[j]-'0')+v[i+j+1];v[i+j+1]=x%10;v[i+j]+=x/10;}string s;int i=0;while(i<v.size()&&!v[i])i++;for(;i<v.size();i++)s+=char('0'+v[i]);return s;} };
