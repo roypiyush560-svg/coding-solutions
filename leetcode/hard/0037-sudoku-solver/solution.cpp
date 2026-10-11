@@ -1,0 +1,1 @@
+class Solution { public: void solveSudoku(vector<vector<char>>& b){function<bool()> dfs=[&](){for(int i=0;i<9;i++)for(int j=0;j<9;j++)if(b[i][j]=='.'){for(char d='1';d<='9';d++){bool ok=true;for(int k=0;k<9;k++)if(b[i][k]==d||b[k][j]==d||b[i/3*3+k/3][j/3*3+k%3]==d){ok=false;break;}if(ok){b[i][j]=d;if(dfs())return true;b[i][j]='.';}}return false;}return true;};dfs();} };
