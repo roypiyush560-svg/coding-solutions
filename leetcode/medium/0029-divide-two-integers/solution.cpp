@@ -1,0 +1,1 @@
+class Solution { public: int divide(int a,int b){if(a==INT_MIN&&b==-1)return INT_MAX; long long x=llabs((long long)a),y=llabs((long long)b),q=0; for(int i=31;i>=0;--i)if((x>>i)>=y){x-=y<<i;q|=1LL<<i;} if((a<0)^(b<0))q=-q;return (int)q;} };
