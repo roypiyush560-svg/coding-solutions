@@ -48,9 +48,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.8 MB  
-**Submitted:** 2026-10-11T14:00:07.211Z  
+**Runtime:** 3 ms (beats 43.79%)  
+**Memory:** 8.5 MB (beats 64.44%)  
+**Submitted:** 2026-10-11T14:00:10.675Z  
 
 ```cpp
 class Solution {
