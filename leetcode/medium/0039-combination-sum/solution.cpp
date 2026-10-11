@@ -1,0 +1,1 @@
+class Solution { public: vector<vector<int>> combinationSum(vector<int>& a,int target){sort(a.begin(),a.end());vector<vector<int>> out;vector<int> cur;function<void(int,int)> dfs=[&](int i,int rem){if(!rem){out.push_back(cur);return;}for(int j=i;j<a.size()&&a[j]<=rem;j++){cur.push_back(a[j]);dfs(j,rem-a[j]);cur.pop_back();}};dfs(0,target);return out;} };
