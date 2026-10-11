@@ -37,9 +37,9 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.9 MB (beats 92.93%)  
-**Submitted:** 2026-10-11T14:29:44.195Z  
+**Runtime:** 0 ms  
+**Memory:** 7.6 MB  
+**Submitted:** 2026-10-11T14:29:28.982Z  
 
 ```cpp
 class Solution { public: int strStr(string h,string n){size_t p=h.find(n);return p==string::npos?-1:(int)p;} };
