@@ -1,0 +1,1 @@
+class Solution { public: int strStr(string h,string n){size_t p=h.find(n);return p==string::npos?-1:(int)p;} };
