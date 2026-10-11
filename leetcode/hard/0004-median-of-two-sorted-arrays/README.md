@@ -42,9 +42,9 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-10-11T13:49:43.272Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 95 MB (beats 78.80%)  
+**Submitted:** 2026-10-11T13:49:45.096Z  
 
 ```cpp
 class Solution {
