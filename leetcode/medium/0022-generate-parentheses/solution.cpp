@@ -1,0 +1,1 @@
+class Solution { public: vector<string> generateParenthesis(int n) { vector<string> ans; string s; function<void(int,int)> dfs=[&](int o,int c){ if((int)s.size()==2*n){ans.push_back(s);return;} if(o<n){s.push_back('(');dfs(o+1,c);s.pop_back();} if(c<o){s.push_back(')');dfs(o,c+1);s.pop_back();} }; dfs(0,0); return ans; } };
