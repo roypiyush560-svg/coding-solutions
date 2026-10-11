@@ -43,9 +43,9 @@ Output: [3,2,1,4,5]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-10-11T14:26:47.413Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 16.5 MB (beats 69.80%)  
+**Submitted:** 2026-10-11T14:27:00.245Z  
 
 ```cpp
 class Solution { public: ListNode* reverseKGroup(ListNode* h,int k){ ListNode d(0,h),*groupPrev=&d; while(true){auto kth=groupPrev; for(int i=0;i<k&&kth;i++)kth=kth->next; if(!kth)break; auto next=kth->next; ListNode* prev=next; ListNode* cur=groupPrev->next; while(cur!=next){auto t=cur->next;cur->next=prev;prev=cur;cur=t;} auto old=groupPrev->next;groupPrev->next=kth;groupPrev=old;}return d.next;} };
